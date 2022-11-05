@@ -13,6 +13,8 @@ struct FeedView: View {
             LazyVStack(){
                 ForEach(0...20, id: \.self){i in
                     Text("sd \(i)")
+                    Text("sd \(i)")
+                    
                 }
             }
         }
