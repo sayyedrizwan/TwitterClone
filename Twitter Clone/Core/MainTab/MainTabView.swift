@@ -19,22 +19,22 @@ struct MainTabView: View {
                 Image(systemName: "house")
             }.tag(0)
             
-            FeedView().onTapGesture {
+            ExploreView().onTapGesture {
                 self.selectedIndex = 1
             }.tabItem{
-                Image(systemName: "house")
+                Image(systemName: "magnifyingglass")
             }.tag(1)
             
-            FeedView().onTapGesture {
+            NotificationView().onTapGesture {
                 self.selectedIndex = 2
             }.tabItem{
-                Image(systemName: "house")
+                Image(systemName: "bell")
             }.tag(2)
             
-            FeedView().onTapGesture {
+            MessagesVIew().onTapGesture {
                 self.selectedIndex = 3
             }.tabItem{
-                Image(systemName: "house")
+                Image(systemName: "message")
             }.tag(3)
         }
     }
